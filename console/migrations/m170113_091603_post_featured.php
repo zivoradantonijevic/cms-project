@@ -6,8 +6,8 @@ class m170113_091603_post_featured extends Migration
 {
     public function up()
     {
-$this->execute("ALTER TABLE {{post}}
-ADD `featured` `featured` tinyint(4) NULL DEFAULT '0' AFTER `comment_count`,
+$this->execute("ALTER TABLE {{%post}}
+ADD `featured` tinyint(4) NULL DEFAULT '0' AFTER `comment_count`,
 ADD `views_count` int(10) unsigned NULL DEFAULT '0',
 ADD `thumbnail` varchar(255) NULL
 ;");
